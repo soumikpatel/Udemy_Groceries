@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Groceries.Droid.Classes;
 
 namespace Groceries.Droid
 {
@@ -19,6 +20,7 @@ namespace Groceries.Droid
         Button newListButton;
         ListView groceryListView;
         Button profileButton;
+        ListRowCustomAdapter groceryAdapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -27,9 +29,19 @@ namespace Groceries.Droid
             SetContentView(Resource.Layout.ListsLayout);
             interfaceBuilder();
 
-            string[] countries = new string[] {"USA", "Canada", "Mexico", "Japan", "India", "China" };
-            ArrayAdapter listAdapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, countries);
-            groceryListView.Adapter = listAdapter;
+
+            AppData.GetInstance();
+            AppData.currentUser = new UserClass()
+            {
+                Name = "Soumik",
+                Email = "defEmail",
+                Uid = "defUid"
+            };
+
+            PrepareFirstLists.Prepare();
+
+            groceryAdapter = new ListRowCustomAdapter(this, AppData.currentLists);
+            groceryListView.Adapter = groceryAdapter;
 
         }
 
