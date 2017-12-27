@@ -1,4 +1,0 @@
-Groceries.Droid.ListsActivity, Groceries.Android;md5d0e1e4f27af34c52886ddb6f168251c8.ListsActivity
-Groceries.Droid.ListsActivity, Groceries.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d0e1e4f27af34c52886ddb6f168251c8.ListsActivity
-Groceries.Droid.ListsActivity;md5d0e1e4f27af34c52886ddb6f168251c8.ListsActivity
-groceries.droid.ListsActivity;md5d0e1e4f27af34c52886ddb6f168251c8.ListsActivity
