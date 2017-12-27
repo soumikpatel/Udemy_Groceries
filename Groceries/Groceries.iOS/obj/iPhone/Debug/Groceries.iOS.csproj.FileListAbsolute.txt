@@ -1,0 +1,9 @@
+D:\Udemy\Groceries\Groceries\Groceries.iOS\bin\iPhone\Debug\Groceries.iOS.exe
+D:\Udemy\Groceries\Groceries\Groceries.iOS\bin\iPhone\Debug\Groceries.iOS.pdb
+D:\Udemy\Groceries\Groceries\Groceries.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\Udemy\Groceries\Groceries\Groceries.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+D:\Udemy\Groceries\Groceries\Groceries.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+D:\Udemy\Groceries\Groceries\Groceries.iOS\obj\iPhone\Debug\optimized\
+D:\Udemy\Groceries\Groceries\Groceries.iOS\obj\iPhone\Debug\Groceries.iOS.csprojResolveAssemblyReference.cache
+D:\Udemy\Groceries\Groceries\Groceries.iOS\obj\iPhone\Debug\Groceries.iOS.exe
+D:\Udemy\Groceries\Groceries\Groceries.iOS\obj\iPhone\Debug\Groceries.iOS.pdb
