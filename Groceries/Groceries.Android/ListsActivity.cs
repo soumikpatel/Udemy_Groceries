@@ -75,7 +75,40 @@ namespace Groceries.Droid
 
         private void NewListAlertView(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            alert.SetTitle("new List");
+            alert.SetMessage("Please enter the name for a new list.");
+
+
+            EditText input = new EditText(this)
+            {
+                TextSize = 22,
+                Gravity = GravityFlags.Center,
+                Hint = "new list"
+            };
+
+            input.SetSingleLine(true);
+            alert.SetView(input);
+
+            alert.SetPositiveButton("Save", (senderAlert, eAlert) => NewListSave(input.Text));
+            alert.SetNegativeButton("Cancel", (senderAlert, eAlert) => {} );
+
+            Dialog dialog = alert.Create();
+            dialog.Show();
+        }
+
+        void NewListSave (string inpListName)
+        {
+            GroceryListClass newList = new GroceryListClass()
+            {
+                Name = inpListName,
+                Owner = AppData.currentUser,
+                Items = new List<ItemClass>()
+            };
+
+            AppData.currentLists.Add(newList);
+
+            groceryAdapter.NotifyDataSetChanged();
         }
     }
 }
